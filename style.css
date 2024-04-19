@@ -619,3 +619,11 @@ h3 {
 	width: 800px; /* Set the width to 1200 pixels */
 	height: 300px; /* Set the height to 400 pixels */
   }
+
+.google-form {
+	margin-bottom: 0px;
+}
+
+.footer-copy {
+    padding-top: 10px; /* Adjust this value as needed */
+}
