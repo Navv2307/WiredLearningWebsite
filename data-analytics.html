@@ -27,6 +27,21 @@
     color: purple;
 }
 </style>
+
+<!-- Custom bullet style -->
+<style>
+    ul {
+        list-style-type: none; /* Remove default bullets */
+        padding-left: 20px; /* Add some left padding */
+    }
+
+    ul li::before {
+        content: "\2022"; /* Unicode character for bullet (•) */
+        color: purple; /* Change bullet color */
+        font-size: 20px; /* Adjust bullet size */
+        margin-right: 10px; /* Add some space between bullet and text */
+    }
+</style>
 </head>
 
 <body>
@@ -40,8 +55,10 @@
       <span class="navbar-toggler-icon"></span> <!-- Replaced with default toggler icon -->
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="index.html" data-scroll-nav="0">Home</a> </li>
+      <ul class="navbar-nav ml-auto" style="list-style-type: none;">
+        <h2 class="nav-item"> <a class="nav-link" href="index.html" data-scroll-nav="0">Home</a> </li>
+    </ul>
+      </ul>
       </ul>
     </div>
   </div>
@@ -183,7 +200,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2>Demo Certificate</h2>
+        <h5>Demo Certificate</h5>
         <img src="images/Demo-Certificate.png" alt="Demo Certificate" class="img-fluid">
         <p><strong>Note:</strong> The certificate contains a Certificate ID, which is verifiable upon completing the course. The ID will be stored in our database.</p>
       </div>
